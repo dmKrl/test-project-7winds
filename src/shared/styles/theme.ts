@@ -2,13 +2,13 @@ import { ITheme } from './styled';
 
 export const baseTheme: ITheme = {
     colors: {
-        primary: '#7986cb',
-        secondary: '#2b2b2b',
+        primary: '#27272A',
+        secondary: '#202124',
         success: '#4caf50',
         danger: '#f44336 ',
 
-        bg: '#E5E4E8',
-        font: '#19191B',
+        bg: '#202124',
+        font: '#FFF',
     },
 
     media: {
@@ -20,10 +20,10 @@ export const baseTheme: ITheme = {
 
     // in px
     sizes: {
-        header: { height: 56 },
-        container: { width: 1200 },
-        footer: { height: 128 },
-        modal: { width: 540 },
+        header: { height: 88 },
+        navbar: { height: 44 },
+        sidebar: { width: 992 },
+        container: { width: 1920 },
     },
 
     // in ms

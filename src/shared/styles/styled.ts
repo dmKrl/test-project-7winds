@@ -20,9 +20,9 @@ export interface ITheme {
 
     sizes: {
         header: { height: number }
+        navbar: { height: number }
+        sidebar: { width: number }
         container: { width: number }
-        footer: { height: number }
-        modal: { width: number }
     }
 
     durations: {

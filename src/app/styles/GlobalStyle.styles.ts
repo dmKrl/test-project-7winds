@@ -1,3 +1,4 @@
+import { baseTheme } from 'shared/styles/theme';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -14,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
 a,
 a:visited {
     text-decoration: none;
-    font-family: 'StratosSkyeng', sans-serif;
     cursor: pointer;
 }
 button {
@@ -30,7 +30,7 @@ body {
     width: 100%;
     height: 100%;
     color: white;
-    background-color: #202124;
+    background-color: ${baseTheme.colors.bg};
 }
 
 `;
