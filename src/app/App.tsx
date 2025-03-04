@@ -5,9 +5,6 @@ export function App() {
     return (
         <BrowserRouter>
             <GlobalStyle />
-            <div>
-                Hello World!
-            </div>
         </BrowserRouter>
     );
 }

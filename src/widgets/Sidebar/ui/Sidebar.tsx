@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
-interface NavbarProps {
+interface SidebarProps {
 }
 
-export const Navbar: FC<NavbarProps> = (props) => {
+export const Sidebar: FC<SidebarProps> = (props) => {
     return (
         <div>
             Some Text
