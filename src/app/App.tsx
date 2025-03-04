@@ -1,19 +1,18 @@
-import { BrowserRouter } from 'react-router-dom';
-import GlobalStyle from './styles/GlobalStyle.styles';
-import { AppContainer } from './styles/App.styles';
-import { Header } from 'widgets/Header/Header';
-import { Sidebar } from 'widgets/Sidebar/ui/Sidebar';
+import { Header } from 'widgets/Header/ui/Header';
+import { Sidebar } from 'widgets/Sidebar';
+import { AppRouter } from './providers/RouterProvider/ui/RouterProvider';
+import { AppContainer, ContentPage, PageWrapper } from './styles/App.styles';
 
 export function App() {
     return (
         <AppContainer>
             <Header />
-            <div>
-                <Sidebar/>
-                <div>
-                    
-                </div>
-            </div>
+            <ContentPage>
+                <Sidebar />
+                <PageWrapper>
+                    <AppRouter />
+                </PageWrapper>
+            </ContentPage>
         </AppContainer>
 
     );

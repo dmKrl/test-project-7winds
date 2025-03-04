@@ -22,7 +22,7 @@ export const baseTheme: ITheme = {
     sizes: {
         header: { height: 88 },
         navbar: { height: 44 },
-        sidebar: { width: 992 },
+        sidebar: { width: 234 },
         container: { width: 1920 },
     },
 

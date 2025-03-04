@@ -8,21 +8,21 @@ interface SidebarProps {
 export const Sidebar: FC<SidebarProps> = (props) => {
     return (
         <SidebarContainer>
-            <AppLink to='/'>По проекту</AppLink>
-            <AppLink to='/'>Объекты</AppLink>
-            <AppLink to='/'>РД</AppLink>
-            <AppLink to='/'>МТО</AppLink>
-            <AppLink to='/'>СМР</AppLink>
-            <AppLink to='/'>График</AppLink>
-            <AppLink to='/'>МиМ</AppLink>
-            <AppLink to='/'>Рабочие</AppLink>
-            <AppLink to='/'>Капвложения</AppLink>
-            <AppLink to='/'>Бюджет</AppLink>
-            <AppLink to='/'>Финансирование</AppLink>
-            <AppLink to='/'>Панорамы</AppLink>
-            <AppLink to='/'>Камеры</AppLink>
-            <AppLink to='/'>Поручения</AppLink>
-            <AppLink to='/'>Контрагенты</AppLink>
+            <AppLink iconIsActive to='/'>По проекту</AppLink>
+            <AppLink iconIsActive to='/'>Объекты</AppLink>
+            <AppLink iconIsActive to='/'>РД</AppLink>
+            <AppLink iconIsActive to='/'>МТО</AppLink>
+            <AppLink iconIsActive to='/'>СМР</AppLink>
+            <AppLink iconIsActive to='/'>График</AppLink>
+            <AppLink iconIsActive to='/'>МиМ</AppLink>
+            <AppLink iconIsActive to='/'>Рабочие</AppLink>
+            <AppLink iconIsActive to='/'>Капвложения</AppLink>
+            <AppLink iconIsActive to='/'>Бюджет</AppLink>
+            <AppLink iconIsActive to='/'>Финансирование</AppLink>
+            <AppLink iconIsActive to='/'>Панорамы</AppLink>
+            <AppLink iconIsActive to='/'>Камеры</AppLink>
+            <AppLink iconIsActive to='/'>Поручения</AppLink>
+            <AppLink iconIsActive to='/'>Контрагенты</AppLink>
         </SidebarContainer>
     );
 };

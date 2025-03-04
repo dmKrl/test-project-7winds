@@ -6,7 +6,7 @@ export const AppContainer = styled.div`
     color: ${baseTheme.colors.font};
     font: var(--font-m);
     font-size: 30px;
-    background-color: ${baseTheme.colors.primary};
+    background-color: ${baseTheme.colors.secondary};
 `;
 
 export const ContentPage = styled.div`
@@ -16,4 +16,5 @@ export const ContentPage = styled.div`
 export const PageWrapper = styled.div`
     flex-grow: 1;
     padding: 20px;
+    background-color: ${baseTheme.colors.secondary};
 `;

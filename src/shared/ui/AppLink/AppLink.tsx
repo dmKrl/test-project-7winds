@@ -1,17 +1,18 @@
 import { FC } from 'react';
 import { LinkProps } from 'react-router-dom';
+import LinkIcon from 'shared/assets/icons/link-icon.svg';
 import { AppLinkUI } from './AppLink.styles';
 
 interface AppLinkProps extends LinkProps {
-    iconProject?: string;
+    iconIsActive?: boolean;
 }
 
 export const AppLink: FC<AppLinkProps> = (props) => {
-    const { to, children, iconProject } = props;
+    const { to, children, iconIsActive } = props;
 
     return (
         <AppLinkUI to={to}>
-            {iconProject && <img src={iconProject} alt='icon-of-project' />}
+            {iconIsActive && <LinkIcon />}
             {children}
         </AppLinkUI>
     );

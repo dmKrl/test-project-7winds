@@ -6,7 +6,7 @@ interface NotFoundPageProps {
 export const NotFoundPage: FC<NotFoundPageProps> = (props) => {
     return (
         <div>
-            Some Text
+            Page Not Found
         </div>
     );
 };

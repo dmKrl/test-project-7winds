@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const AppLinkUI = styled(Link)`
     display: flex;
+    align-items: center;
     gap: 14px;
     color: white;
     transition: 0.2s opacity ease;   
