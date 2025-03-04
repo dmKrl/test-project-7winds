@@ -36,7 +36,4 @@ module.exports = {
         'linebreak-style': 0,
         'arrow-body-style': 0,
     },
-    globals: {
-        __IS_DEV__: true,
-    },
 };

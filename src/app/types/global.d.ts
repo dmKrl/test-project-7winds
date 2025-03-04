@@ -1,8 +1,36 @@
-declare module '*.png'
-declare module '*.jpg'
-declare module '*.jpeg'
-declare module '*.svg' {
-    import React from 'react';
+declare module '*.png' {
+    const path: string;
+    export default path;
+}
 
-    export const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
+declare module '*.jpg' {
+    const path: string;
+    export default path;
+}
+
+declare module '*.jpeg' {
+    const path: string;
+    export default path;
+}
+
+declare module '*.gif' {
+    const path: string;
+    export default path;
+}
+
+declare module '*.webp' {
+    const path: string;
+    export default path;
+}
+
+declare module '*.ico' {
+    const path: string;
+    export default path;
+}
+
+declare module '*.svg' {
+    import type { FunctionComponent, SVGProps } from 'react';
+
+    const component: FunctionComponent<SVGProps<SVGSVGElement>>;
+    export default component;
 }
