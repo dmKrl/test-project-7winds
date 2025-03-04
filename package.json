@@ -7,14 +7,13 @@
         "start": "webpack serve --env port=3000",
         "build:dev": "webpack --env mode=development",
         "build:prod": "webpack --env mode=production",
-        "lint:ts": "eslint \"**/*.{ts, tsx}\"",
-        "lint:ts:fix": "eslint \"**/*.{ts, tsx}\" --fix"
+        "lint:ts": " eslint \"**/*.{ts,tsx}\"",
+        "lint:ts:fix": " eslint \"**/*.{ts,tsx}\" --fix"
     },
     "dependencies": {
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-router-dom": "^7.2.0",
-        "styled-components": "^6.1.15"
+        "react-router-dom": "^7.2.0"
     },
     "devDependencies": {
         "@pmmmwh/react-refresh-webpack-plugin": "^0.5.8",
@@ -27,13 +26,13 @@
         "@types/webpack-dev-server": "^4.7.2",
         "@typescript-eslint/eslint-plugin": "^8.26.0",
         "@typescript-eslint/parser": "^8.26.0",
+        "babel-plugin-styled-components": "^2.1.4",
         "clean-webpack-plugin": "^4.0.0",
         "copy-webpack-plugin": "^12.0.2",
         "css-loader": "^6.9.1",
         "eslint": "^8.57.1",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-plugin-import": "^2.31.0",
-        "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-react": "^7.37.4",
         "eslint-plugin-react-hooks": "^4.6.2",
         "html-webpack-plugin": "^5.5.0",
@@ -42,6 +41,8 @@
         "sass": "^1.55.0",
         "sass-loader": "^14.0.0",
         "style-loader": "^3.3.1",
+        "styled-components": "^6.1.15",
+        "stylelint-config-styled-components": "^0.1.1",
         "ts-loader": "^9.4.1",
         "ts-node": "^10.9.2",
         "typescript": "^5.3.3",

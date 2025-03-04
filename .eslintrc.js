@@ -34,7 +34,6 @@ module.exports = {
         'jsx-quotes': 'off',
         'max-len': ['error', { code: 100, ignoreComments: true }],
         'linebreak-style': 0,
-        'react/jsx-props-no-spreading': 0,
         'arrow-body-style': 0,
     },
     globals: {

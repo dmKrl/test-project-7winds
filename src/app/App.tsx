@@ -1,5 +1,5 @@
-import { BrowserRouter } from "react-router-dom"
-import GlobalStyle from "./styles/GlobalStyle.styles"
+import { BrowserRouter } from 'react-router-dom';
+import GlobalStyle from './styles/GlobalStyle.styles';
 
 export function App() {
     return (
@@ -9,5 +9,5 @@ export function App() {
                 Hello World!
             </div>
         </BrowserRouter>
-    )
+    );
 }
