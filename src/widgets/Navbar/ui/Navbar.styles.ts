@@ -7,6 +7,7 @@ export const NavbarContainer = styled.div`
     gap: 10px;
     padding: 0px 20px;
     height: ${baseTheme.sizes.navbar.height}px;
-    border-bottom: 1px solid #414144;
+    border-bottom: 1px solid ${baseTheme.colors.borderLine};
+
 
 `;

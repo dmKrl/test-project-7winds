@@ -5,10 +5,13 @@ export const baseTheme: ITheme = {
         primary: '#27272A',
         secondary: '#202124',
         success: '#4caf50',
-        danger: '#f44336 ',
+        danger: '#f44336',
+        borderLine: '#414144',
 
         bg: '#202124',
         font: '#FFF',
+        fontBlur: '#A1A1AA',
+        fontIntup: '#71717A',
     },
 
     media: {

@@ -10,7 +10,7 @@ export const TopbarContentBlock = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-right: 1px solid #414144;
+    border-right: 1px solid ${baseTheme.colors.borderLine};
     padding: 10px 10px 10px 20px;
     height: ${baseTheme.sizes.navbar.height}px;
     min-width: ${baseTheme.sizes.sidebar.width}px;

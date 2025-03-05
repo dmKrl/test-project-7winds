@@ -6,9 +6,12 @@ export interface ITheme {
         secondary: string
         success: string
         danger: string
+        borderLine: string
 
         bg: string,
         font: string,
+        fontBlur: string,
+        fontIntup: string,
     }
 
     media: {

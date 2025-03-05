@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const TextItemUI = styled.p`
+export const TextItemUI = css`
     color: #FFF;
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Roboto;
