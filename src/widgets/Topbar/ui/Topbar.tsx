@@ -19,7 +19,7 @@ export const Topbar: FC<TopbarProps> = (props) => {
                     Название проекта
                     <span>Аббревиатура</span>
                 </TopbarText>
-                <Button>Стрелка</Button>
+                <Button><ButtonArrow /></Button>
             </TopbarContentBlock>
             <TopbarContentBlock>
                 <TopbarTitle>Строительно-монтажные работы</TopbarTitle>

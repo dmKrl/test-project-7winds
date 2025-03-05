@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const AppContainer = styled.div`
     min-height: 100vh;
     color: ${baseTheme.colors.font};
-    font: var(--font-m);
     font-size: 30px;
     background-color: ${baseTheme.colors.secondary};
 `;

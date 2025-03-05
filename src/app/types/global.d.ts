@@ -28,6 +28,11 @@ declare module '*.ico' {
     export default path;
 }
 
+declare module '*.ttf' {
+    const path: string;
+    export default path;
+}
+
 declare module '*.svg' {
     import type { FunctionComponent, SVGProps } from 'react';
 

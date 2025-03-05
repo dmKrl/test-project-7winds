@@ -29,5 +29,19 @@ export function buildLoaders(): webpack.RuleSetRule[] {
         ],
     };
 
-    return [typeScriptLoader, svgLoader, fileLoader];
+    const fontLoader = {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: 'assets/resource',
+        // use: [
+        //     {
+        //         loader: 'file-loader',
+        //         options: {
+        //             name: 'fonts/[name].[ext]',
+        //             publicPath: '../ ',
+        //         },
+        //     },
+        // ],
+    };
+
+    return [typeScriptLoader, svgLoader, fileLoader, fontLoader];
 }
