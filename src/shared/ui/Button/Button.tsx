@@ -5,7 +5,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: FC<ButtonProps> = (props) => {
-    const { children, onClick } = props;
+    const { children, onClick, className } = props;
 
     return (
         <ButtonUI type='button' onClick={onClick}>
