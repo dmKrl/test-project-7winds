@@ -14,6 +14,5 @@ export function App() {
                 </PageWrapper>
             </ContentPage>
         </AppContainer>
-
     );
 }
