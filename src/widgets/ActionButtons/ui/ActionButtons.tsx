@@ -14,6 +14,7 @@ export const ActionButtons: FC<ActionButtonsProps> = ({ rID, handleChangeIsActiv
     const [deleteChosenOutlay] = OutlayAPI.useDeleteChosenOutlayMutation();
     const { eID } = useAppSelector((state) => state.outlayReducer);
     const [isHovered, setIsHovered] = useState(false);
+    const { isEditState } = useAppSelector((state) => state.activityReducer);
 
     const deleteOutlay = async () => {
         try {
@@ -29,10 +30,11 @@ export const ActionButtons: FC<ActionButtonsProps> = ({ rID, handleChangeIsActiv
             onMouseLeave={() => setIsHovered(false)}
             isHovered={isHovered}
         >
-            <CreateButtonUI onClick={handleChangeIsActive}>
+            <CreateButtonUI disabled={isEditState} onClick={handleChangeIsActive}>
                 <CreateIcon />
             </CreateButtonUI>
             <DeleteButtonUI
+                disabled={isEditState}
                 style={{ opacity: isHovered ? 1 : 0 }}
                 onClick={deleteOutlay}>
                 <DeleteIcon />

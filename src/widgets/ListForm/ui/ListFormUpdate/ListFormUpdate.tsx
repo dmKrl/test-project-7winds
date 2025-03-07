@@ -1,7 +1,8 @@
 import React, { FC, useEffect, useState } from 'react';
-import { useAppSelector } from 'features/hooks/redux';
+import { useAppDispatch, useAppSelector } from 'features/hooks/redux';
 import { OutlayAPI } from 'features/services/OutlayService';
 import { IOutlay } from 'features/store/models/IOutlay';
+import { changeIsEditState } from 'features/store/slices/ActivitySlice';
 import {
     InputUpdateDevices,
     InputUpdateNameWork,
@@ -35,13 +36,16 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
     const [updateChosenOutlay] = OutlayAPI.useUpdateChosenOutlayMutation();
     const { eID } = useAppSelector((state) => state.outlayReducer);
     const [isEdit, setIsEdit] = useState<boolean>(false);
+    const dispatch = useAppDispatch();
 
     const handleDoubleClick = () => {
         setIsEdit(true);
+        dispatch(changeIsEditState(true));
     };
 
     const handleBlur = () => {
         setIsEdit(false);
+        dispatch(changeIsEditState(false));
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

@@ -1,9 +1,11 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { OutlayAPI } from 'features/services/OutlayService';
 import outlayReducer from 'features/store/slices/OutlaySlice';
+import activityReducer from 'features/store/slices/ActivitySlice';
 
 export const rootReducer = combineReducers({
     outlayReducer,
+    activityReducer,
     [OutlayAPI.reducerPath]: OutlayAPI.reducer,
 });
 
