@@ -1,5 +1,5 @@
 export interface IOutlay {
-    child: null[],
+    child: null[] | IOutlay[],
     equipmentCosts: number,
     estimatedProfit: number,
     id: number,

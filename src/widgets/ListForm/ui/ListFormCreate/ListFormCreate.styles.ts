@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+interface InputCreateProps {
+    isEdit?: boolean;
+}
+
 export const ListFormContainer = styled.div`
     display: flex;
     gap: 10px;
@@ -7,39 +11,40 @@ export const ListFormContainer = styled.div`
     height: 41px;
 `;
 
-const InputUI = css`
+const InputUI = css<InputCreateProps>`
     border-radius: 6px;
     border: 1px solid #414144;
     background: rgba(0, 0, 0, 0.00);
     height: 36px;
     color: white;
+    padding: 0px 10px;
     :focus {
         outline: none;
         border: none;
     }
 `;
 
-export const InputNameWork = styled.input`
+export const InputCreateNameWork = styled.input<InputCreateProps>`
     ${InputUI};
     min-width: 44.313rem;
 `;
 
-export const InputSalary = styled.input`
+export const InputCreateSalary = styled.input<InputCreateProps>`
     ${InputUI};
     width: 12.5rem;
 `;
 
-export const InputDevices = styled.input`
+export const InputCreateDevices = styled.input<InputCreateProps>`
     ${InputUI};
     width: 12.5rem;
 `;
 
-export const InputOverheads = styled.input`
+export const InputCreateOverheads = styled.input<InputCreateProps>`
     ${InputUI};
     width: 12.5rem;
 `;
 
-export const InputProfit = styled.input`
+export const InputCreateProfit = styled.input<InputCreateProps>`
     ${InputUI};
     width: 12.5rem;
 `;

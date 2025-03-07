@@ -1,6 +1,6 @@
 import { useAppSelector } from 'features/hooks/redux';
 import { FC } from 'react';
-import { ListForm } from 'widgets/ListForm';
+import { ListFormCreate } from 'widgets/ListForm';
 import { ListItem } from 'widgets/ListItem';
 import { ListItemsUI } from './ListItems.styles';
 
@@ -12,10 +12,10 @@ export const ListItems: FC<ListItemsProps> = (props) => {
 
     return (
         <ListItemsUI>
-            {outlays.length ? outlays.map(() => {
-                return (<ListItem outlays={outlays} />);
+            {outlays?.length ? outlays.map((outlay) => {
+                return (<ListItem key={outlay.id} outlay={outlay} />);
             })
-                : <ListItem outlays={outlays} />}
+                : <ListFormCreate />}
         </ListItemsUI>
     );
 };
