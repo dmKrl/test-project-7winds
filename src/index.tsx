@@ -12,7 +12,7 @@ const store = setupStore();
 
 root.render(
     <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter basename="/test-project-7winds/">
             <GlobalStyle />
             <App />
         </BrowserRouter>
