@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import { App } from 'app/App';
 import GlobalStyle from 'app/styles/GlobalStyle.styles';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { setupStore } from 'features/store/store';
 
@@ -12,9 +12,9 @@ const store = setupStore();
 
 root.render(
     <Provider store={store}>
-        <BrowserRouter basename="/test-project-7winds/">
+        <HashRouter basename="/test-project-7winds/">
             <GlobalStyle />
             <App />
-        </BrowserRouter>
+        </HashRouter>
     </Provider>,
 );
