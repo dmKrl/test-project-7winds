@@ -5,7 +5,7 @@ import { IInputsUpdate } from 'widgets/ListForm/ui/ListFormUpdate/ListFormUpdate
 
 export const OutlayAPI = createApi({
     reducerPath: 'outlayAPI',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://185.244.172.108:8081/' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://185.244.172.108:8081/' }),
     tagTypes: ['Outlay'],
     endpoints: (build) => ({
 

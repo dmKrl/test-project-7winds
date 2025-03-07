@@ -13,7 +13,6 @@ export const AppLinkUI = styled(Link)`
     font-weight: 400;
     line-height: normal; 
     position: relative;
-    background-image: url(underlineImg);
     :hover {
         opacity: 0.8;
     }
