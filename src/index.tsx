@@ -12,7 +12,7 @@ const store = setupStore();
 
 root.render(
     <Provider store={store}>
-        <HashRouter basename="/test-project-7winds/">
+        <HashRouter>
             <GlobalStyle />
             <App />
         </HashRouter>
