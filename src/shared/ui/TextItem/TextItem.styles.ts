@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const TextItemUI = css`
     color: #FFF;
+    text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Roboto;
     font-size: 14px;

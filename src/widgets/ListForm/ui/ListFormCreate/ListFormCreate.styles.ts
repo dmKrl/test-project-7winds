@@ -7,7 +7,7 @@ interface InputCreateProps {
 export const ListFormContainer = styled.div`
     display: flex;
     gap: 10px;
-    padding: 0px 10px;
+    padding: 4px 10px 0px;
     height: 41px;
 `;
 
@@ -15,9 +15,9 @@ const InputUI = css<InputCreateProps>`
     border-radius: 6px;
     border: 1px solid #414144;
     background: rgba(0, 0, 0, 0.00);
-    height: 36px;
     color: white;
     padding: 0px 10px;
+    text-align: center;
     :focus {
         outline: none;
         border: none;
@@ -26,7 +26,7 @@ const InputUI = css<InputCreateProps>`
 
 export const InputCreateNameWork = styled.input<InputCreateProps>`
     ${InputUI};
-    min-width: 44.313rem;
+    width: 100%;
 `;
 
 export const InputCreateSalary = styled.input<InputCreateProps>`

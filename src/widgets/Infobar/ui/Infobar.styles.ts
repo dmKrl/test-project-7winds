@@ -9,6 +9,18 @@ export const InfobarContainer = styled.div`
     height: 41px;
 `;
 
+export const InfobarContainerBlockLeft = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+`;
+
+export const InfobarContainerBlockRight = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+`;
+
 const InfobarText = css`
     ${TextItemUI};
     color: ${baseTheme.colors.fontBlur};

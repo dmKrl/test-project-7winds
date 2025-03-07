@@ -2,7 +2,7 @@ import { IOutlay } from 'features/store/models/IOutlay';
 import { ListFormCreate, ListFormUpdate } from 'widgets/ListForm';
 import { FC, useState } from 'react';
 import { ActionButtons } from 'widgets/ActionButtons/ui/ActionButtons';
-import { ListItemUI, ListItemWrapperUI } from './ListItem.styles';
+import { ListItemUI, ListItemWrapperChildUI, ListItemWrapperUI } from './ListItem.styles';
 
 interface ListItemProps {
     outlay: IOutlay,
@@ -21,7 +21,8 @@ export const ListItem: FC<ListItemProps> = (props) => {
             <ListItemWrapperUI>
                 <ActionButtons
                     handleChangeIsActive={handleChangeIsActive}
-                    rID={outlay.id} />
+                    rID={outlay.id}
+                />
                 <ListFormUpdate rID={outlay.id} outlay={outlay} />
             </ListItemWrapperUI>
             {isActiveCreateForm
@@ -29,14 +30,13 @@ export const ListItem: FC<ListItemProps> = (props) => {
                     <ListFormCreate
                         handleChangeIsActive={handleChangeIsActive}
                         rID={outlay.id} />
-                )
-            }
+                )}
             {outlay.child && outlay.child.length > 0 && (
-                <>
+                <ListItemWrapperChildUI>
                     {outlay.child.map((childOutlay) => {
                         return <ListItem key={childOutlay.id} outlay={childOutlay} />;
                     })}
-                </>
+                </ListItemWrapperChildUI>
             )}
         </ListItemUI>
     );

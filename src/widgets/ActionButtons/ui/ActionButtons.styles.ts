@@ -6,6 +6,7 @@ export const ActionButtonsBlock = styled.div`
     border-radius: 6px;
     padding: 2px;
     background: none;
+    min-width: 52px;
     .actionButtons:has(> .button:hover) {
     }
 `;

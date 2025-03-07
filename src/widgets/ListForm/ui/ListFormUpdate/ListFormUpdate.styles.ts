@@ -9,16 +9,17 @@ export const ListFormContainer = styled.div`
     gap: 10px;
     padding: 0px 10px;
     height: 41px;
+    width: 100%;
 `;
 
 const InputUI = css<InputPropsUpdate>`
     border-radius: 6px;
     border: none;
     background: rgba(0, 0, 0, 0.00);
-    height: 36px;
     cursor: default;
     color: white;
     padding: 0px 10px;
+    text-align: center;
     ${(props) => props.isEdit && css`
             border: 1px solid #414144;
             cursor: text;
@@ -31,7 +32,7 @@ const InputUI = css<InputPropsUpdate>`
 
 export const InputUpdateNameWork = styled.input<InputPropsUpdate>`
     ${InputUI};
-    min-width: 44.313rem;
+    width: 100%;
 `;
 
 export const InputUpdateSalary = styled.input<InputPropsUpdate>`

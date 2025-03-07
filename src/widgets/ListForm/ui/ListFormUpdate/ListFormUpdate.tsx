@@ -36,6 +36,14 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
     const { eID } = useAppSelector((state) => state.outlayReducer);
     const [isEdit, setIsEdit] = useState<boolean>(false);
 
+    const handleDoubleClick = () => {
+        setIsEdit(true);
+    };
+
+    const handleBlur = () => {
+        setIsEdit(false);
+    };
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setInputs({
@@ -47,6 +55,7 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
     const handleSubmit = async (inputs: IInputsUpdate) => {
         try {
             const response = await updateChosenOutlay({ inputs, eID, rID });
+            handleBlur();
             console.log(response.data);
         } catch (error) {
             console.error('Ошибка при отправке данных:', error);
@@ -62,14 +71,6 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
                 alert('Пожалуйста, заполните все поля!');
             }
         }
-    };
-
-    const handleDoubleClick = () => {
-        setIsEdit(true);
-    };
-
-    const handleBlur = () => {
-        setIsEdit(false);
     };
 
     useEffect(() => {

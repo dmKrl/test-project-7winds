@@ -6,6 +6,7 @@ export const SidebarContainer = styled.div`
     flex-direction: column;
     width: ${baseTheme.sizes.sidebar.width}px;
     gap: 10px;
+    min-height: 100vh;
     border-right: 1px solid ${baseTheme.colors.borderLine};
     background-color: ${baseTheme.colors.primary};
     a {

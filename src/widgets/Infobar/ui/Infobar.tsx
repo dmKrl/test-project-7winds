@@ -1,6 +1,8 @@
 import { FC } from 'react';
 import {
     InfobarContainer,
+    InfobarContainerBlockLeft,
+    InfobarContainerBlockRight,
     TextDevices,
     TextLevel,
     TextNameWork,
@@ -15,12 +17,16 @@ interface InfobarProps {
 export const Infobar: FC<InfobarProps> = (props) => {
     return (
         <InfobarContainer>
-            <TextLevel>Уровень</TextLevel>
-            <TextNameWork>Наименование работ</TextNameWork>
-            <TextSalary>Основная з/п</TextSalary>
-            <TextDevices>Оборудование</TextDevices>
-            <TextOverheads>Накладные расходы</TextOverheads>
-            <TextProfit>Сметная прибыль</TextProfit>
+            <InfobarContainerBlockLeft>
+                <TextLevel>Уровень</TextLevel>
+                <TextNameWork>Наименование работ</TextNameWork>
+            </InfobarContainerBlockLeft>
+            <InfobarContainerBlockRight>
+                <TextSalary>Основная з/п</TextSalary>
+                <TextDevices>Оборудование</TextDevices>
+                <TextOverheads>Накладные расходы</TextOverheads>
+                <TextProfit>Сметная прибыль</TextProfit>
+            </InfobarContainerBlockRight>
         </InfobarContainer>
     );
 };
