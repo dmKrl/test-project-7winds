@@ -88,7 +88,6 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
                 value={inputs.inputUpdateNameWork}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                 onDoubleClick={handleDoubleClick}
-                onBlur={handleBlur}
                 isEdit={isEdit}
                 readOnly={!isEdit}
             />
@@ -98,7 +97,6 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
                 value={inputs.inputUpdateSalary}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                 onDoubleClick={handleDoubleClick}
-                onBlur={handleBlur}
                 isEdit={isEdit}
                 readOnly={!isEdit}
             />
@@ -108,7 +106,6 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
                 value={inputs.inputUpdateDevices}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                 onDoubleClick={handleDoubleClick}
-                onBlur={handleBlur}
                 isEdit={isEdit}
                 readOnly={!isEdit}
             />
@@ -118,7 +115,6 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
                 value={inputs.inputUpdateOverheads}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                 onDoubleClick={handleDoubleClick}
-                onBlur={handleBlur}
                 isEdit={isEdit}
                 readOnly={!isEdit}
             />
@@ -128,7 +124,6 @@ export const ListFormUpdate: FC<ListFormUpdateProps> = ({ outlay, rID }) => {
                 value={inputs.inputUpdateProfit}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleChange(e)}
                 onDoubleClick={handleDoubleClick}
-                onBlur={handleBlur}
                 isEdit={isEdit}
                 readOnly={!isEdit}
             />

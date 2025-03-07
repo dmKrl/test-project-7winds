@@ -1,13 +1,9 @@
 import { useAppSelector } from 'features/hooks/redux';
-import { FC } from 'react';
 import { ListFormCreate } from 'widgets/ListForm';
 import { ListItem } from 'widgets/ListItem';
 import { ListItemsUI } from './ListItems.styles';
 
-interface ListItemsProps {
-}
-
-export const ListItems: FC<ListItemsProps> = (props) => {
+export const ListItems = () => {
     const { outlays } = useAppSelector((state) => state.outlayReducer);
 
     return (

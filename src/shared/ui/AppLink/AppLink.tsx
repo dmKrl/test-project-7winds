@@ -8,10 +8,12 @@ interface AppLinkProps extends LinkProps {
 }
 
 export const AppLink: FC<AppLinkProps> = (props) => {
-    const { to, children, iconIsActive } = props;
+    const {
+        to, children, iconIsActive, style,
+    } = props;
 
     return (
-        <AppLinkUI to={to}>
+        <AppLinkUI style={style} to={to}>
             {iconIsActive && <LinkIcon />}
             {children}
         </AppLinkUI>

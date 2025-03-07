@@ -17,17 +17,13 @@ export const CIWPage: FC<CIWPageProps> = (props) => {
 
     const changeOutlays = (data: [] | IOutlay[]) => {
         if (!data?.length) {
-            console.log('undefined');
             return;
         }
-        console.log('none undefined');
         dispatch(setOutlays(data));
     };
 
     useEffect(() => {
         changeOutlays(data);
-        console.log(data, eID);
-        console.log(outlays);
     }, [data, outlays]);
     return (
         <CIWPageContainer>

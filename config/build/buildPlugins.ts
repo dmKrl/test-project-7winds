@@ -4,7 +4,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import webpack from 'webpack';
 import { BuildOptions } from './types/config';
 
-export function buildPlugins({ paths, isDev }: BuildOptions):
+export function buildPlugins({ paths }: BuildOptions):
     webpack.WebpackPluginInstance[] {
     return [
         new CleanWebpackPlugin(),

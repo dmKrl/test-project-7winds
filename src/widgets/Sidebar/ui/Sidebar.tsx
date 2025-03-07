@@ -1,18 +1,22 @@
-import { FC } from 'react';
 import { AppLink } from 'shared';
+import { baseTheme } from 'shared/styles/theme';
 import { SidebarContainer } from './Sidebar.styles';
 
-interface SidebarProps {
-}
-
-export const Sidebar: FC<SidebarProps> = (props) => {
+export const Sidebar = () => {
     return (
         <SidebarContainer>
             <AppLink iconIsActive to='/'>По проекту</AppLink>
             <AppLink iconIsActive to='/'>Объекты</AppLink>
             <AppLink iconIsActive to='/'>РД</AppLink>
             <AppLink iconIsActive to='/'>МТО</AppLink>
-            <AppLink iconIsActive to='/'>СМР</AppLink>
+            <AppLink
+                style={{
+                    backgroundColor: baseTheme.colors.fontBlur,
+                }}
+                iconIsActive
+                to='/'>
+                СМР
+            </AppLink>
             <AppLink iconIsActive to='/'>График</AppLink>
             <AppLink iconIsActive to='/'>МиМ</AppLink>
             <AppLink iconIsActive to='/'>Рабочие</AppLink>

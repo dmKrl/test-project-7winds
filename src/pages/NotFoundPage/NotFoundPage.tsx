@@ -1,9 +1,4 @@
-import { FC } from 'react';
-
-interface NotFoundPageProps {
-}
-
-export const NotFoundPage: FC<NotFoundPageProps> = (props) => {
+export const NotFoundPage = () => {
     return (
         <div>
             Page Not Found

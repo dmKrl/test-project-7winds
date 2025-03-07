@@ -14,13 +14,6 @@ export interface ITheme {
         fontIntup: string,
     }
 
-    media: {
-        extraLarge: string
-        large: string
-        medium: string
-        small: string
-    }
-
     sizes: {
         header: { height: number }
         navbar: { height: number }

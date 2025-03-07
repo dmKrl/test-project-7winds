@@ -1,12 +1,8 @@
-import { FC } from 'react';
 import { Navbar } from 'widgets/Navbar';
 import { Topbar } from 'widgets/Topbar';
 import { HeaderContainer } from './Header.styles';
 
-interface HeaderProps {
-}
-
-export const Header: FC<HeaderProps> = (props) => {
+export const Header = () => {
     return (
         <HeaderContainer>
             <Navbar />

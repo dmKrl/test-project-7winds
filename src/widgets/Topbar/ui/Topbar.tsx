@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { Button } from 'shared/ui/Button/Button';
 import ButtonArrow from 'widgets/assets/icons/button-arrow.svg';
 import {
@@ -8,10 +7,7 @@ import {
     TopbarTitle,
 } from './Topbar.styles';
 
-interface TopbarProps {
-}
-
-export const Topbar: FC<TopbarProps> = (props) => {
+export const Topbar = () => {
     return (
         <TopbarContainer>
             <TopbarContentBlock>

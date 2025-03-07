@@ -47,7 +47,7 @@ export const ListFormCreate: FC<ListFormCreateProps> = ({
 
     const handleSubmit = async (inputs: IInputsCreate) => {
         try {
-            const response = await createOutlay({ inputs, eID, rID });
+            await createOutlay({ inputs, eID, rID });
             handleChangeIsActive();
         } catch (error) {
             console.error('Ошибка при отправке данных:', error);

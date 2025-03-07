@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import {
     InfobarContainer,
     InfobarContainerBlockLeft,
@@ -11,10 +10,7 @@ import {
     TextSalary,
 } from './Infobar.styles';
 
-interface InfobarProps {
-}
-
-export const Infobar: FC<InfobarProps> = (props) => {
+export const Infobar = () => {
     return (
         <InfobarContainer>
             <InfobarContainerBlockLeft>

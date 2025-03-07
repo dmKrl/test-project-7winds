@@ -1,22 +1,25 @@
 import { baseTheme } from 'shared/styles/theme';
-import { Button } from 'shared/ui/Button/Button';
+import { ButtonUI } from 'shared/ui/Button/Button.styles';
 import styled from 'styled-components';
 
-export const ActionButtonsBlock = styled.div`
+interface IActionButtons {
+    isHovered: boolean;
+}
+
+export const ActionButtonsBlock = styled.div<IActionButtons>`
     border-radius: 6px;
     padding: 2px;
-    background: none;
+    transition: 0.2s background-color ease;
+    background-color: ${(props) => (props.isHovered
+        ? baseTheme.colors.borderLine
+        : '#202124')}; 
     min-width: 52px;
-    .actionButtons:has(> .button:hover) {
-    }
 `;
 
-export const DeleteButtonUI = styled(Button)`
+export const DeleteButtonUI = styled(ButtonUI)`
     opacity: 0;
+    transition: 0.2s opacity ease; 
 `;
 
-export const CreateButtonUI = styled(Button)`
-    :hover .actionButtons {
-        background: ${baseTheme.colors.borderLine};
-    }
+export const CreateButtonUI = styled(ButtonUI)`
 `;
